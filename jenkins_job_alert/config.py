@@ -23,7 +23,7 @@ class Config:
             return None
 
     def update_config_procedure(self):
-        self.jenkins_host = input("Jenkins host: ")
+        self.jenkins_host = input("Jenkins host (eq: https://host.com/jenkins): ")
         self.jenkins_user = input("Jenkins user: ")
         self.jenkins_token = input("Jenkins token: ")
         if not all([self.jenkins_token, self.jenkins_user, self.jenkins_host]):
