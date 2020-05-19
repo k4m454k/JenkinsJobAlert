@@ -25,6 +25,7 @@ def argument_parser(argv=None):
 def run():
     job = ""
     build = ""
+    raw_job = []
     args = argument_parser()
     if args.configure:
         config.update_config_procedure()
@@ -32,7 +33,9 @@ def run():
     if not config.jenkins_host:
         print("Config file error! Please run \njenkins_job_alert --configure")
         return
-    raw_job = args.job[0]
+    if args.job:
+        raw_job = args.job[0]
+
     if raw_job:
         if "/" in raw_job:
             job, build, *_ = raw_job.split("/")
