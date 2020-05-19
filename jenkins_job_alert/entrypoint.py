@@ -29,6 +29,8 @@ def run():
     args = argument_parser()
     if args.configure:
         config.update_config_procedure()
+        print("Config complete. Please, allow messages.")
+        notify(title="Notification Test", subtitle="Notification Test", info_text="")
         return
     if not config.jenkins_host:
         print("Config file error! Please run \njenkins_job_alert --configure")
