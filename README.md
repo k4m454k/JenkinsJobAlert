@@ -1,5 +1,8 @@
 # **Python Jenkins Job Alerter for MacOS**
 
+- Uses a native alert system for makos.
+- Remembers the jobs of recent launches
+- Checks for multiple active builds
 
 ## Requirements:
 
@@ -19,13 +22,19 @@ $ jenkins_job_alert --configure
 ```
 
 ## Usage
+### `jenkins_job_alert` checks job for in progress builds and you can choice build
+
 ``` bash
 $ jenkins_job_alert job_name
 ```
-jenkins_job_alert checks job for in progress builds and you can choice build
 
-
+### Specified build number
 ``` bash
 $ jenkins_job_alert job_name/820
 ```
-Specified build number
+
+### `jenkins_job_alert` will offer you a choice of job
+
+``` bash
+$ jenkins_job_alert job_name
+```
