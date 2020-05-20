@@ -4,7 +4,7 @@ from jenkins_job_alert import __version__, __author__, __email__
 
 
 setup(
-    name='passgen',
+    name='jenkins_job_alert',
     version=__version__,
     author=__author__,
     author_email=__email__,
