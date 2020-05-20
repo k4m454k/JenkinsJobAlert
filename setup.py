@@ -15,6 +15,7 @@ setup(
     entry_points={
         'console_scripts': [
             'jenkins_job_alert = jenkins_job_alert.entrypoint:run',
+            'jja = jenkins_job_alert.entrypoint:run',
         ],
     },
 )
