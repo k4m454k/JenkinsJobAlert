@@ -1,6 +1,6 @@
 # **Python Jenkins Job Alerter for MacOS**
 
-- Uses a native alert system for makos.
+- Uses a native alert system for MacOS.
 - Remembers the jobs of recent launches
 - Checks for multiple active builds
 
